@@ -1,0 +1,16 @@
+import java.util.scanner ;
+
+  public class J001 {
+    
+    public static void main (String[]args){
+
+        Scanner scanner = new Scanner(System.in) ;
+        System.out.print("請輸入字串");
+        
+        String input = scanner.nextLine();
+        System.out.print("Hello " + input);
+        
+
+        scanner.close; 
+          }
+  }
