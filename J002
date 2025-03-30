@@ -11,11 +11,11 @@ public class J002 {
         String line = scanner.nextLine();
         String[] parts =line.split(",");
 
-        int a = Math.abs(Integer.parseInt(parts[0].trim));
-        int b = Math.abs(parseInt[1]);
+        int a = Math.abs(Integer.parseInt(parts[0].trim()));
+        int b = Math.abs(Integer.parseInt(parts[1].trim()));
         int sum = a + b;
 
-        if(a < 100000 & b < 100000){
+        if(a < 100000 && b < 100000){
             
             System.out.println(" a + b 的總和是" + sum );
         }else{
