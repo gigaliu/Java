@@ -1,23 +1,27 @@
 import java.util.Scanner;
 
-public class J002 {
-    public static void main(String[] args) {
+public class J003 {
+
+    public static void main(String[]args){
+
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("請輸入兩個整數（中間用逗號分開）：");
+        
+        System.out.print("請輸入兩個數字");
+        
         String line = scanner.nextLine();
-        String[] parts = line.split(",");
+        String[] parts =line.split(",");
 
-        int a = Math.abs(Integer.parseInt(parts[0].trim()));
-        int b = Math.abs(Integer.parseInt(parts[1].trim()));
+        int a = Math.abs(Integer.parseInt(parts[0].trim));
+        int b = Math.abs(parseInt[1]);
+        int sum = a + b;
 
-        if (a < 1000000 && b < 1000000) {
-            int sum = a + b;
-            System.out.println("a + b 的總和是：" + sum);
-        } else {
-            System.out.println("輸入的數字超過限制！");
+        if(a < 100000 & b < 100000){
+            
+            System.out.println(" a + b 的總和是" + sum );
+        }else{
+
+            System.out.println("數字太大不對");
         }
-
         scanner.close();
     }
 }
