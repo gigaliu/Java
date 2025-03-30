@@ -8,7 +8,6 @@ public class J002 {
         String line = scanner.nextLine();
         String[] parts = line.split(",");
 
-        // ✅ 一開始就轉成絕對值
         int a = Math.abs(Integer.parseInt(parts[0].trim()));
         int b = Math.abs(Integer.parseInt(parts[1].trim()));
 
