@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class J003 {
+
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("請輸入月份及日期");
+
+        String line = scanner.nextLine();
+        String[] parts = line.split(",");
+        
+        int M = Math.abs(Integer.parseInt(parts[0].trim()));
+        int D = Math.abs(Integer.parseInt(parts[1].trim()));
+
+        int S =(M*2+D)%3;
+
+        if (S==0){
+            System.out.print("普通");
+        }else if (S==1) {
+            System.out.print("吉");
+        }else{
+             System.out.print("大吉");
+        }
+        scanner.close();
+    }
+}
